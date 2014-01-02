@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/outer">
+
+        <rotate
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:fromDegrees="0"
+            android:toDegrees="1080">
+
+                <shape android:shape="ring" android:innerRadiusRatio="3" android:thickness="2dp"
+                       android:thicknessRatio="8" android:useLevel="false">
+
+                    <gradient android:type="sweep" android:useLevel="false"
+                              android:startColor="@color/spinner_outer_default_start"
+                              android:centerY="0.50" android:endColor="@color/spinner_outer_default_end" />
+
+                </shape>
+
+
+
+            </rotate>
+
+    </item>
+    <item
+        android:id="@+id/inner">
+        <rotate
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:fromDegrees="720"
+            android:toDegrees="0">
+
+            <shape android:shape="ring" android:innerRadiusRatio="3" android:thickness="2dp"
+                   android:thicknessRatio="8" android:useLevel="false">
+
+                <gradient android:type="sweep" android:useLevel="false"
+                          android:startColor="@color/spinner_inner_default_start"
+                          android:centerY="0.50" android:endColor="@color/spinner_inner_default_end"
+                          />
+
+            </shape>
+
+            </rotate>
+
+
+    </item>
+</layer-list>
+
+
+
+

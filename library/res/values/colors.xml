@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Outer spinner -->
+    <color name="spinner_outer_default_start">#ffffff</color>
+    <color name="spinner_outer_default_end">#00ffffff</color>
+
+    <!-- inner spinner -->
+    <color name="spinner_inner_default_start">#80444444</color>
+    <color name="spinner_inner_default_end">#80c3c3c3</color>
+
+
+    <color name="spinner_single_default_end">#4c737373</color>
+    <color name="spinner_single_default_middle">#ffffd300</color>
+
+
+</resources>

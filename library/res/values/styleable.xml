@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ColorProgressBar">
+
+        <attr name="mode" format="enum">
+            <enum name="simple" value="1"/>
+            <enum name="single" value="2"/>
+            <enum name="custom" value="3"/>
+        </attr>
+
+
+        <attr name="overrideAndroid2" format="boolean" />
+
+        <!-- Simple mode -->
+        <attr name="color" format="color|reference" />
+
+        <!-- Single mode -->
+        <attr name="startColor" format="color|reference" />
+        <attr name="endColor" format="color|reference" />
+        <attr name="middleColor" format="color|reference"/>
+
+
+
+    </declare-styleable>
+</resources>

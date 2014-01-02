@@ -1,0 +1,140 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hannesdorfmann.colorprogressbar.example.MainActivity"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:textSize="@dimen/textsize"
+                android:text="Native"/>
+
+            <ProgressBar
+                android:layout_width="@dimen/progressbar_width"
+                android:layout_height="@dimen/progressbar_height"
+                android:layout_gravity="center"
+                style="?android:attr/progressBarStyleLarge"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:textSize="@dimen/textsize"
+                android:text="Default"/>
+
+            <com.hannesdorfmann.colorprogressbar.ColorProgressBar
+                android:layout_width="@dimen/progressbar_width"
+                android:layout_height="@dimen/progressbar_height"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_gravity="center"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/textsize"
+                    android:text="Simple"/>
+
+                <com.hannesdorfmann.colorprogressbar.ColorProgressBar
+                    android:layout_width="@dimen/progressbar_width"
+                    android:layout_height="@dimen/progressbar_height"
+                    android:layout_gravity="center"
+                    style="?android:attr/progressBarStyleLarge"
+                    custom:mode="simple"
+                    custom:color="#ff0000"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/textsize"
+                    android:text="Simple"/>
+
+                <com.hannesdorfmann.colorprogressbar.ColorProgressBar
+                    android:layout_width="@dimen/progressbar_width"
+                    android:layout_height="@dimen/progressbar_height"
+                    android:layout_gravity="center"
+                    style="?android:attr/progressBarStyleLarge"
+                    custom:mode="single"
+                    custom:startColor="#4c737373"
+                    custom:middleColor="#ffffd300"
+                    custom:endColor="#4c737373"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    
+    </LinearLayout>
+</ScrollView>

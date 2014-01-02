@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="spinner_thikness">2dp</dimen>
+    <dimen name="spinner_single_thikness">4dp</dimen>
+</resources>
